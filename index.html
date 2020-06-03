@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Allenamento</title>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="flex content-center flex-wrap justify-center items-center h-screen">
+    <div class="w-full p-2">
+      <div class="text-center p-2">
+        <h1 class="text-2xl font-black">PROGRAMMA ALLUNGAMENTO</h1>
+        <table class="table w-full md:w-1/2 ml-auto mr-auto border-collapse border-2 border-gray-500">
+          <thead>
+            <th class="border border-gray-400 px-4 py-2 text-gray-800">Nome</th>
+            <th class="border border-gray-400 px-4 py-2 text-gray-800">Durata</th>
+            <th class="border border-gray-400 px-4 py-2 text-gray-800">Ripetizioni</th>
+          </thead>
+          <tbody id="tbl_esercizi">
+
+          </tbody>
+        </table>
+      </div>
+      <div class="text-center p-2 self-center">
+        <h2 id="nome_esercizio" class="tracking-widest text-4xl font-bold"></h2>
+        <div id="cronometro" class="text-6xl font-black"></div>
+        <button id="avvia" onclick="javascript:avvia();"
+          class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">AVVIA ALLENAMENTO</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
