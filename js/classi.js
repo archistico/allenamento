@@ -36,7 +36,7 @@ class Allenamento {
         this.allenamento.push(new Evento(esercizio.nome+" "+rip+"/"+esercizio.ripetizioni, esercizio.durata, "./mp3/button-16.mp3", esercizio.immagine));
         // aggiungi il cambio se non è l'ultima ripetizione
         if(c<(esercizio.ripetizioni-1)) {
-          this.allenamento.push(new Evento("Cambia lato", DURATA_CAMBIO, "./mp3/button-30.mp3", esercizio.immagine));
+          this.allenamento.push(new Evento("Cambia/pausa", DURATA_CAMBIO, "./mp3/button-30.mp3", esercizio.immagine));
         }        
       }
   }
