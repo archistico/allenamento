@@ -2,20 +2,20 @@ const DURATA_PREPARAZIONE = 10;
 const DURATA_CAMBIO = 5;
 
 let esercizi = new Allenamento();
-esercizi.aggiungi(new Esercizio("Bicipite femorale", 30, 4, "./img/gamba_retro.png"));
-esercizi.aggiungi(new Esercizio("Polpaccio", 30, 2, "./img/polpaccio_1.png"));
-esercizi.aggiungi(new Esercizio("Gamba retto", 30, 2, "./img/gamba_retto.png"));
-esercizi.aggiungi(new Esercizio("Gluteo", 30, 2, "./img/gluteo.png"));
-esercizi.aggiungi(new Esercizio("Ileo psoas", 20, 4, "./img/ileopsoas.png"));
-esercizi.aggiungi(new Esercizio("Polpaccio in piedi", 20, 4, "./img/polpaccio_2.png"));
-esercizi.aggiungi(new Esercizio("Farfalla", 20, 2, "./img/farfalla.png"));
-esercizi.aggiungi(new Esercizio("Gamba retto prono", 30, 1, "./img/gamba_retto_prono.png"));
-esercizi.aggiungi(new Esercizio("Spaccata", 20, 2, "./img/spaccata.png"));
-esercizi.aggiungi(new Esercizio("Addominali", 20, 1, "./img/addominali.png"));
-esercizi.aggiungi(new Esercizio("Laterali", 30, 2, "./img/laterali.png"));
-esercizi.aggiungi(new Esercizio("Pettorali", 20, 1, "./img/pettorali.png"));
-esercizi.aggiungi(new Esercizio("Spalla", 15, 2, "./img/spalla.png"));
-esercizi.aggiungi(new Esercizio("Tricipiti", 15, 2, "./img/tricipiti.png"));
+esercizi.aggiungi(new Esercizio("Bicipite femorale", 30, 4, "./img/stretching/gamba_retro.png"));
+esercizi.aggiungi(new Esercizio("Polpaccio", 30, 2, "./img/stretching/polpaccio_1.png"));
+esercizi.aggiungi(new Esercizio("Gamba retto", 30, 2, "./img/stretching/gamba_retto.png"));
+esercizi.aggiungi(new Esercizio("Gluteo", 30, 2, "./img/stretching/gluteo.png"));
+esercizi.aggiungi(new Esercizio("Ileo psoas", 20, 4, "./img/stretching/ileopsoas.png"));
+esercizi.aggiungi(new Esercizio("Polpaccio in piedi", 20, 4, "./img/stretching/polpaccio_2.png"));
+esercizi.aggiungi(new Esercizio("Farfalla", 20, 2, "./img/stretching/farfalla.png"));
+esercizi.aggiungi(new Esercizio("Gamba retto prono", 30, 1, "./img/stretching/gamba_retto_prono.png"));
+esercizi.aggiungi(new Esercizio("Spaccata", 20, 2, "./img/stretching/spaccata.png"));
+esercizi.aggiungi(new Esercizio("Addominali", 20, 1, "./img/stretching/addominali.png"));
+esercizi.aggiungi(new Esercizio("Laterali", 30, 2, "./img/stretching/laterali.png"));
+esercizi.aggiungi(new Esercizio("Pettorali", 20, 1, "./img/stretching/pettorali.png"));
+esercizi.aggiungi(new Esercizio("Spalla", 15, 2, "./img/stretching/spalla.png"));
+esercizi.aggiungi(new Esercizio("Tricipiti", 15, 2, "./img/stretching/tricipiti.png"));
 
 document.getElementById("durata").innerHTML = "Durata "+esercizi.calcolaDurata();
 
