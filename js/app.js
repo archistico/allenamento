@@ -1,5 +1,5 @@
-const DURATA_PREPARAZIONE = 1;
-const DURATA_CAMBIO = 1;
+const DURATA_PREPARAZIONE = 5;
+const DURATA_CAMBIO = 5;
 
 let esercizi = new Allenamento();
 esercizi.aggiungi(new Esercizio("Bicipite femorale", 30, 4, "./img/gamba_retro.png"));
@@ -8,8 +8,8 @@ esercizi.aggiungi(new Esercizio("Gamba retto", 30, 2, "./img/gamba_retto.png"));
 esercizi.aggiungi(new Esercizio("Gluteo", 30, 2, "./img/gluteo.png"));
 esercizi.aggiungi(new Esercizio("Ileo psoas", 20, 4, "./img/ileopsoas.png"));
 esercizi.aggiungi(new Esercizio("Polpaccio in piedi", 20, 2, "./img/polpaccio_2.png"));
-esercizi.aggiungi(new Esercizio("Farfalla", 20, 1, "./img/farfalla.png"));
-esercizi.aggiungi(new Esercizio("Gamba retto prono", 30, 2, "./img/gamba_retto_prono.png"));
+esercizi.aggiungi(new Esercizio("Farfalla", 20, 2, "./img/farfalla.png"));
+esercizi.aggiungi(new Esercizio("Gamba retto prono", 40, 1, "./img/gamba_retto_prono.png"));
 esercizi.aggiungi(new Esercizio("Spaccata", 20, 2, "./img/spaccata.png"));
 esercizi.aggiungi(new Esercizio("Addominali", 20, 2, "./img/addominali.png"));
 esercizi.aggiungi(new Esercizio("Laterali", 30, 2, "./img/laterali.png"));
@@ -17,11 +17,7 @@ esercizi.aggiungi(new Esercizio("Pettorali", 30, 1, "./img/pettorali.png"));
 esercizi.aggiungi(new Esercizio("Spalla", 15, 2, "./img/spalla.png"));
 esercizi.aggiungi(new Esercizio("Tricipiti", 15, 2, "./img/tricipiti.png"));
 
-esercizi.lista.forEach(function(e) {
-  document.getElementById('tbl_esercizi').innerHTML += '<tr><td class="border border-gray-400 px-4 py-2">'+e.nome+'</td><td  class="border border-gray-400 px-4 py-2">'+e.durata+'s</td><td class="border border-gray-400 px-4 py-2">'+e.ripetizioni+'x</td></tr>';
-})
-
-document.getElementById("durata").innerHTML = "Durata: "+esercizi.calcolaDurata();
+document.getElementById("durata").innerHTML = "Durata "+esercizi.calcolaDurata();
 
 // -------------------------------
 //         CLICK SU AVVIA
@@ -72,9 +68,8 @@ function avvia() {
   };
 
   document.getElementById("titolo").style.display = "none";
-  document.getElementById("btn_avvia").style.display = "none";
-  document.getElementById("tabella").style.display = "none";
   document.getElementById("durata").style.display = "none";
+  document.getElementById("btn_avvia").style.display = "none";
 
   promiseForEach(esercizi.allenamento, timer);
 }

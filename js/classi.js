@@ -50,7 +50,7 @@ class Allenamento {
     let minuti = Math.floor(totale / 60);
     let secondi = totale - minuti * 60;
 
-    return str_pad_left(minuti,'0',2)+' minuti '+str_pad_left(secondi,'0',2)+' secondi';  
+    return str_pad_left(minuti,'0',2)+":"+str_pad_left(secondi,'0',2);  
   }
 }
 
